@@ -1,0 +1,21 @@
+H1:
+Font: Open Sans Extra Bold
+Font size: 16
+Font colour: #475F7B & #7367F0
+Line spacing: 1.25
+Alignment: center
+
+H2:
+Font: Rubik
+Font size: 10
+Font colour: #475F7B
+Line spacing: 1.25
+Alignment: center
+
+CTA:
+Font: Rubik
+Font size: 10
+Font colour: #ffffff
+Line spacing: 1
+Alignment: center
+CTA Button colour: #FF4546

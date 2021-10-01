@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  position: relative;
+  height: 90px;
+  width: 728px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  height: 25px;
+  width: 120px;
+  top: 40%;
+  left: 8%;
+  transform: translateY(-50%);
+  object-fit: cover;
+}
+
+.text1,
+.text2 {
+  position: absolute;
+  color:  #475F7B;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.text1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+}
+
+.text2 {
+  font-size: 12px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2mm;
+}
+
+#find, #new, #customers, #rest {
+  right: 60%;
+  transform: translateX(50%);
+  width: 100%;
+}
+
+/* #find {
+  top: 25%;
+} */
+
+/* #new {
+  top: 35%;
+} */
+
+#customers {
+  /* top: 45%; */
+  color:  #475F7B;
+}
+
+#rest {
+  top: 62%;
+}
+
+#cta {
+  position: absolute;
+  background-color: #FF4546;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  width: 100px;
+  height: 20px;
+  border-radius: 2px;
+  position: relative;
+
+  top: 35%;
+  left: 58%;
+}
+
+#cta .win, #cta .join{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#cta .win {
+  opacity: 0;
+}
+
+#clicktag {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 3;
+  top: 0;
+}
+
+#find, #new, #logo,#customers, #rest, #cta {
+  opacity: 0;
+}
+
+#logo {
+  animation: reveal 0.5s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.line-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  animation: applyHeight 0.8s .5s ease forwards;
+}
+
+#line {
+  padding-right: 42px;
+}
+
+
+#find {
+  animation: animateFind 0.5s 1.6s ease forwards;
+}
+#new {
+  animation: animateNew 0.5s 2s ease forwards;
+} 
+/* #customers {
+  animation: animateCustomers 0.5s 2.4s ease forwards;
+}  */
+
+#rest {
+  animation: reveal 0.5s 2s ease forwards;
+}
+
+#cta {
+  animation: reveal 0.5s 2.4s ease forwards;
+}
+
+#cta .join {
+  animation: animateJoin 4.5s 2.4s ease infinite;
+}
+#cta .win {
+  animation: animateWin 4.5s 2.4s ease infinite;
+}
+
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  } 
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes applyHeight {
+  from {
+    height: 0;
+  } 
+
+  to {
+    height: 100%;
+  }
+}
+
+
+@keyframes animateFind {
+  from {
+    top: 50%;
+    opacity: 0;
+  }
+  
+  to {
+    top: 25%;
+    opacity: 1;
+  }
+}
+
+@keyframes animateNew {
+  from {
+    top: 50%;
+    opacity: 0;
+  }
+  
+  to {
+    top: 45%;
+    opacity: 1;
+  }
+}
+
+@keyframes animateCustomers {
+  from {
+    top: 60%;
+    opacity: 0;
+  }
+  
+  to {
+    top: 45%;
+    opacity: 1;
+  }
+}
+
+@keyframes animateJoin {
+  0% {
+    top: 50%;
+    opacity: 1;
+  }
+  45% {
+    top: 50%;
+    opacity: 1;
+  }
+
+  50% {
+    top: 100%;
+    opacity: 0;
+  }
+
+  95% {
+    top: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+  
+}
+
+@keyframes animateWin {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  45% {
+    top: 100%;
+    opacity: 0;
+  }
+
+  50% {
+    top: 50%;
+    opacity: 1;
+  }
+
+  95% {
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+  
+}
