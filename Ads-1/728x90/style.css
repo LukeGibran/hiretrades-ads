@@ -2,11 +2,13 @@
   font-family: 'Open Sans';
   src: url('./images/OpenSans-Bold.ttf');
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Rubik';
   src: url('./images/Rubik-Regular.ttf');
+  font-display: swap;
 }
 * {
   margin: 0;
